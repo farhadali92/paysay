@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="freeCrmTest" />
-        <module name="pageObjectModelWithCucumber" />
         <module name="paysay" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="freeCrmTest" target="1.5" />
+      <module name="pageObjectModelWithCucumber" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

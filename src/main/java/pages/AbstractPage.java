@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class AbstractPage {
 
-    private WebDriver driver;
+    private static WebDriver driver;
     private WebDriverWait webDriverWait;
 
 
@@ -16,7 +16,7 @@ public abstract class AbstractPage {
         this.webDriverWait = new WebDriverWait(driver, Constants.WEBDRIVER_WAIT);
     }
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 

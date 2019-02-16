@@ -31,9 +31,9 @@ public class LoginPage extends AbstractPage {
         passwordField.sendKeys(password);
     }
 
-    public HomePage clickSubmitButton() {
+    public void clickSubmitButton() {
         submitButton.click();
-        return new HomePage(getDriver());
+
     }
 
     public String verifyLoginPageTitle() {

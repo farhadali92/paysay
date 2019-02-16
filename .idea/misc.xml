@@ -5,8 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../PageObjectModelWithCucumber/pom.xml" />
-        <option value="$PROJECT_DIR$/../freeCrm/pom.xml" />
       </list>
     </option>
   </component>

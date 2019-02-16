@@ -56,12 +56,12 @@ public class WebEventListener extends AbstractPage implements WebDriverEventList
     }
 
     public void onException(Throwable error, WebDriver driver) {
-//        System.out.println("Exception occured: " + error);
-//        try {
-//            TestUtil.takeScreenshotAtEndOfTest();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        System.out.println("Exception occured: " + error);
+        try {
+            TestUtil.takeScreenshotAtEndOfTest();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
