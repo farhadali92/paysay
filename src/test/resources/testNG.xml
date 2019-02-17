@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="paysay test suit">
+
+    <listeners>
+        <listener class-name="extentReportListener.ExtentReportListener"/>
+    </listeners>
+
+    <test name="free CRM test cases">
+        <classes>
+            <class name="testcases.HomePageTests"/>
+            <class name="testcases.LoginPageTests"/>
+            <class name="testcases.SignUpPageTests"/>
+        </classes>
+    </test>
+</suite>
