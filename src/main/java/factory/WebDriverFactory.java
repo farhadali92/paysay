@@ -31,7 +31,7 @@ public class WebDriverFactory {
         }
 
         eventFiringWebDriver = new EventFiringWebDriver(webDriver);
-        eventListener = new WebEventListener(webDriver);
+        eventListener = new WebEventListener();
         eventFiringWebDriver.register(eventListener);
         webDriver = eventFiringWebDriver;
 

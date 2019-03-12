@@ -6,7 +6,7 @@
         <listener class-name="extentReportListener.ExtentReportListener"/>
     </listeners>
 
-    <test name="free CRM test cases">
+    <test name="paysay tests">
         <classes>
             <class name="testcases.HomePageTests"/>
             <class name="testcases.LoginPageTests"/>

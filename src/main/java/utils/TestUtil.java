@@ -11,13 +11,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class TestUtil extends AbstractPage {
+public class TestUtil {
 
     static String projectPath= System.getProperty("user.dir");
-
-    public TestUtil(WebDriver driver) {
-        super(driver);
-    }
 
 
     public static void waitInSeconds(int seconds){
@@ -28,11 +24,9 @@ public class TestUtil extends AbstractPage {
         }
     }
 
-    public static void takeScreenshotAtEndOfTest() throws IOException {
-
-        File scrFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+    public static void takeScreenshotAtEndOfTest(WebDriver driver) throws IOException {
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File(projectPath + "/screenshots/" + System.currentTimeMillis() + ".png"));
-
     }
 
 }
